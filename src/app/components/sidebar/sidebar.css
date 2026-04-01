@@ -1,0 +1,51 @@
+.sidebar {
+  width: 250px;
+  height: calc(100vh - 60px);
+  background: #f8f9fa;
+
+  padding: 10px;
+  overflow-y: auto;   /* scroll if long */
+
+  border-right: 1px solid #ddd;
+}
+
+/* Title */
+.sidebar-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+/* List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* Links */
+a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Hover effect */
+a:hover {
+  background: #e2e6ea;
+}
+
+/* 🔥 Active topic */
+.active-link {
+  background-color: #04AA6D;
+  color: white;
+  font-weight: bold;
+}

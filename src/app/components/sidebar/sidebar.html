@@ -1,0 +1,16 @@
+<div class="sidebar">
+
+  <h3 class="sidebar-title">Java Tutorial</h3>
+
+  <ul>
+    <li *ngFor="let t of topics">
+      <a 
+        [routerLink]="['/topic', t.id]"
+        routerLinkActive="active-link"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        {{ t.title }}
+      </a>
+    </li>
+  </ul>
+</div>

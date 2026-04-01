@@ -1,0 +1,15 @@
+<div class="content" *ngIf="topic">
+
+  <!-- Title -->
+  <h1>{{ topic.title }}</h1>
+  <!-- Render HTML Content -->
+  <div [innerHTML]="topic.content"></div>
+  <!-- Quiz Button -->
+  <button [routerLink]="['/quiz', topic.id]">
+    Take Quiz →
+  </button>
+</div>
+<!-- If topic not found -->
+<div *ngIf="!topic">
+  <h2>Topic not found</h2>
+</div>

@@ -1,0 +1,30 @@
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+
+app-navbar {
+  display: block;
+  height: 60px;
+  background: #44c136;
+  color: rgb(255, 255, 255);
+}
+
+/* Sidebar */
+app-sidebar {
+  position: fixed;
+  top: 74px;
+  left: 0;
+  width: 260px;
+  height: calc(100vh - 60px);
+  background: #f1f1f1;
+}
+
+/* Content area */
+router-outlet + * {
+  margin-left: 250px;
+  margin-top: 60px;
+  padding: 20px;
+}

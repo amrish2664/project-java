@@ -1,0 +1,23 @@
+/* Container for sidebar + content */
+.main-container {
+  display: flex;
+}
+
+/* Sidebar */
+app-sidebar {
+  width: 250px;
+  height: calc(100vh - 60px);
+  background: #f1f1f1;
+}
+
+/* Content area */
+.content-area {
+  flex: 1;
+  padding: 20px;
+}
+app-navbar {
+  display: block;
+  height: 60px;
+  background: #08ca43;
+  color: white;
+}
