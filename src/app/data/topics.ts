@@ -13,7 +13,7 @@ export const TOPICS: Topic[] = [
     content: `
       <h2>Java Introduction</h2>
       <p>Java is a high-level, object-oriented programming language.</p>
-
+       <p>Java is platform independent means it can run on any platform that has java virtual machine (JVM)</p>
       <h3>Features of Java</h3>
       <ul>
         <li>Platform Independent</li>
