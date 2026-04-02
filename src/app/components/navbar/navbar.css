@@ -1,7 +1,8 @@
 .navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 16px;
   height: 60px;
   color: #333;
   background-color: #04AA6D;
@@ -14,6 +15,13 @@
   display: flex;
   align-items: center;
   gap: 8px;
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 18px;
+    gap: 6px;
+  }
 }
 
 .logo-img {

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component,EventEmitter,Output } from '@angular/core';
 import { RouterLink,RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -9,6 +9,12 @@ import { RouterLink,RouterLinkActive } from '@angular/router';
   styleUrl: './sidebar.css',
 })
 export class Sidebar {
+
+    @Output() sidebarClose = new EventEmitter<void>();
+
+  closeSidebar() {
+    this.sidebarClose.emit(); // 👈 tell parent to close
+  }
 topics = [
   { id: 'intro', title: 'Java Intro' },
   {id:'Keywords',title:'Keywords'},

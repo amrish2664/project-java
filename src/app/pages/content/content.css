@@ -1,10 +1,20 @@
 .content {
   max-width: 800px;
-  padding: 20px;   /* ✅ FIXED */
-  margin: 0 auto;  /* center content nicely */
+  padding: 20px;   
+  margin: 0 auto; 
+}
+@media (max-width: 768px) {
+  .content {
+    max-width: 100%;
+    padding: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .content {
+    padding: 10px;
+  }
 }
 
-/* Code block styling */
 pre {
   background: #282c34;
   color: white;
@@ -21,4 +31,5 @@ button {
   margin-top: 20px;
   padding: 10px 15px;
   cursor: pointer;
+  display:none;
 }

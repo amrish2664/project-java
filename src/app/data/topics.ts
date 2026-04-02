@@ -4,16 +4,14 @@ export interface Topic {
   title: string;
   content: string;
 }
-
-
 export const TOPICS: Topic[] = [
   {
     id: 'intro',
     title: 'Java Introduction',
     content: `
-      <h2>Java Introduction</h2>
+      
       <p>Java is a high-level, object-oriented programming language.</p>
-       <p>Java is platform independent means it can run on any platform that has java virtual machine (JVM)</p>
+      
       <h3>Features of Java</h3>
       <ul>
         <li>Platform Independent</li>
@@ -31,6 +29,7 @@ public class Main {
       </code></pre>
     `
   },
+  
 
   {
     id: 'variables',
@@ -69,43 +68,5 @@ char c = 'A';
     `
   },
 
-  {
-    id: 'loops',
-    title: 'Loops in Java',
-    content: `
-      <h2>Loops in Java</h2>
-      <p>Loops are used to execute a block of code repeatedly.</p>
-
-      <h3>For Loop Example:</h3>
-      <pre><code>
-for(int i = 0; i < 5; i++) {
-  System.out.println(i);
-}
-      </code></pre>
-    `
-  },
-
-  {
-    id: 'oops',
-    title: 'OOP Concepts',
-    content: `
-      <h2>Object-Oriented Programming</h2>
-
-      <ul>
-        <li>Encapsulation</li>
-        <li>Inheritance</li>
-        <li>Polymorphism</li>
-        <li>Abstraction</li>
-      </ul>
-
-      <h3>Example:</h3>
-      <pre><code>
-class Animal {
-  void sound() {
-    System.out.println("Animal makes sound");
-  }
-}
-      </code></pre>
-    `
-  }
+ 
 ];
